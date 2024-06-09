@@ -4,11 +4,9 @@ import cn.javgo.boot.tool.mapstruct.BO.UserBO;
 import cn.javgo.boot.tool.mapstruct.DO.UserDO;
 import cn.javgo.boot.tool.mapstruct.MapStructApplication;
 import cn.javgo.boot.tool.mapstruct.convert.UserConvert;
-import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Import;
 
 import java.time.LocalDateTime;
 

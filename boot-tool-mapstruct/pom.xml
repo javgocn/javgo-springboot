@@ -16,6 +16,9 @@
 
     <properties>
         <lombok.version>1.18.32</lombok.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <mapstruct-processor.version>${mapstruct.version}</mapstruct-processor.version>
+        <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
     </properties>
 
     <dependencies>
@@ -72,16 +75,19 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
                         </path>
                         <!-- Lombok MapStruct Binding -->
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok-mapstruct-binding</artifactId>
+                            <version>${lombok-mapstruct-binding.version}</version>
                         </path>
                         <!-- 声明 mapstruct-processor 为 JSR 269 的 Java 注解处理器 -->
                         <path>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct-processor.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
