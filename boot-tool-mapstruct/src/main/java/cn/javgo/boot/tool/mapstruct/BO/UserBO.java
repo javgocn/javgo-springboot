@@ -18,7 +18,8 @@ public class UserBO {
     /**
      * 主键
      */
-    private Integer id;
+    // private Integer id;
+    private Integer userId;
 
     /**
      * 用户名

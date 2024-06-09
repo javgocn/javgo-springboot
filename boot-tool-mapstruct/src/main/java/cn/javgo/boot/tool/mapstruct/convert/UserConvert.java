@@ -4,6 +4,8 @@ import cn.javgo.boot.tool.mapstruct.BO.UserBO;
 import cn.javgo.boot.tool.mapstruct.DO.UserDO;
 import cn.javgo.boot.tool.mapstruct.handler.BaseConvert;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.Mappings;
 
 import java.time.format.DateTimeFormatter;
 
@@ -33,4 +35,10 @@ public interface UserConvert extends BaseConvert<UserDO, UserBO> {
         target.setCreateTime(source.getCreateTime().format(dateTimeFormatter));
         target.setUpdateTime(source.getUpdateTime().format(dateTimeFormatter));
     }
+
+    @Mappings(
+            @Mapping(source = "id", target = "userId") // 将 id 属性映射到 userId 属性
+    )
+    @Override
+    UserBO convertTo(UserDO source);
 }
