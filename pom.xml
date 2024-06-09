@@ -11,13 +11,12 @@
     <description>SpringBoot教程</description>
     <url>https://github.com/javgocn/javgo-springboot</url>
 
+    <modules>
+        <module>boot-tool-mapstruct</module>
+    </modules>
+
     <properties>
         <revision>1.0-SNAPSHOT</revision>
-        <!-- Maven 相关 -->
-        <java.version>17</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencyManagement>
