@@ -6,10 +6,14 @@
     <file url="file://$PROJECT_DIR$/boot-base-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-base-config/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-base-helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-base-starters/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boot-base-starters/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-dependencies/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-dependencies/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-tool-mapstruct/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/boot-tool-mapstruct/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javgo-spring-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javgo-spring-boot-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

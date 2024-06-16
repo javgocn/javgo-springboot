@@ -15,6 +15,7 @@
         <module>boot-tool-mapstruct</module>
         <module>boot-base-config</module>
         <module>boot-base-autoconfiguration</module>
+        <module>boot-base-starters</module>
     </modules>
 
     <properties>
