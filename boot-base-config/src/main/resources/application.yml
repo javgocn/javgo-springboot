@@ -1,0 +1,65 @@
+javgo:
+  name: JAVGO
+  site: javago.cn
+  author: 老李
+  users:
+    - Jom
+    - Lucy
+    - Jack
+  params:
+    tel: 18800008888
+    address: China
+  security:
+    # security-key: 123321
+    # security-code: 666666
+    # 生成随机 32 位 MD5 字符串
+    security-key: ${random.value} # 使用随机字符串
+    security-code: ${random.uuid} # 使用随机值32位 UUID
+  username: ENC@[GUHCAhx4Xak4M/hKQUCbtBk5Gu/fai3JmqMrSlwaJ3CdLxWaUFGcvZH/rKW0Eekz]
+  password: ENC@[BBQvsoLksEk+4mXBpUGprrW5HPSn4vV5j6HgInb4kcoGrXTlgq5Rr5hWB2mir6Rz]
+
+member:
+  name: Tom
+  sex: 1
+  # age: 18
+  age: ${random.int[18,100]} # 使用随机值, 范围 [18,100]
+  birthday: 2000-05-08 12:00:00
+  country: China
+
+spring:
+  config:
+    import:
+      - optional:classpath:/config/app.yml # 使用 optional 避免配置文件不存在报错
+  application:
+    name: javago
+  profiles:
+    active: dev, main # 可以被命令行覆盖
+    default: dev
+    include: # 不会被命令行覆盖
+      - dev
+      - main
+
+# Jasypt
+jasypt:
+  encryptor:
+    password: G9w0BAQEFAASCBKYwggSiAgEAAoIBAQC # 密钥
+    property:
+      prefix: "ENC@[" # 前缀
+      suffix: "]" # 后缀
+
+---
+spring:
+  application:
+    name: javago-dev
+  config:
+    activate:
+      # on-cloud-platform: kubernetes
+      on-profile: "dev | test"
+
+member:
+  name: Alice
+  sex: 2
+  # age: 18
+  age: ${random.int[18,100]} # 使用随机值, 范围 [18,100]
+  birthday: 2000-05-08 12:00:00
+  country: China

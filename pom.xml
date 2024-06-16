@@ -13,6 +13,7 @@
 
     <modules>
         <module>boot-tool-mapstruct</module>
+        <module>boot-base-config</module>
     </modules>
 
     <properties>
