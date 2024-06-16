@@ -1,0 +1,6 @@
+debug: true # 开启自动配置报告
+
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
